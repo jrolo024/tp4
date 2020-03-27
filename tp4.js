@@ -16,10 +16,29 @@ function sum(numbers)
 		return somme;
 	}
 }
-
+function sum1(numbers)
+{
+	let somme=0;
+	let size=numbers.length;
+	if (size<1)
+		{
+			return 0;
+		}
+	else 
+	{
+        let i =0;
+		for(i in numbers)
+		{
+            somme=somme+numbers[i]; 
+            i++;
+            
+		}
+		return somme;
+	}
+}
 function Testsum(){
-console.log( sum([]) );             // => 0
-console.log( sum([42,404,1337]) );  // => 1783
+console.log( sum1([]) );             // => 0
+console.log( sum1([42,404,1337]) );  // => 1783
 
 }
 //exo2
@@ -96,10 +115,10 @@ function TestAplatissement(){
 
 function main(){
 	Testsum();
-	TestWord ();
-	TestRange ();
-	TestOccurence ();
-	TestAplatissement ();
+	//TestWord ();
+	//TestRange ();
+	//TestOccurence ();
+	//TestAplatissement ();
 }
 
 main();
