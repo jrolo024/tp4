@@ -114,11 +114,11 @@ function TestAplatissement(){
 }
 
 function main(){
-	Testsum();
+	//Testsum();
 	//TestWord ();
 	//TestRange ();
 	//TestOccurence ();
-	//TestAplatissement ();
+	TestAplatissement ();
 }
 
 main();
